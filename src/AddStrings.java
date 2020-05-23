@@ -15,7 +15,12 @@
 public class AddStrings {
 	
 	public static void main(String[] args) {
+		//Test cases
 		System.out.println(addStrings("999", "111"));
+
+		System.out.println(addStrings("123", "123"));
+		
+		System.out.println(addStrings("721", "4448"));
 	}
 	
 	public static String addStrings(String num1, String num2) {
