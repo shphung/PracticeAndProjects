@@ -86,12 +86,12 @@ public class RotateImage {
 	public static void toString(int[][] matrix) {
 		for(int i = 0; i < matrix.length; i++) {
 			System.out.print("[");
-			for(int j = 0; j < matrix.length; j++) {
-				if(matrix[i][j] < 10 && j < matrix.length - 1) {
+			for(int j = 0; j < matrix[0].length; j++) {
+				if(matrix[i][j] < 10 && j < matrix[0].length - 1) {
 					System.out.print(" " + matrix[i][j] + ",");
-				} else if(matrix[i][j] < 10 && j == matrix.length - 1) {
+				} else if(matrix[i][j] < 10 && j == matrix[0].length - 1) {
 					System.out.print(" " + matrix[i][j]);
-				} else if(j < matrix.length - 1) {
+				} else if(j < matrix[0].length - 1) {
 					System.out.print(matrix[i][j] + ",");
 				} else {
 					System.out.print(matrix[i][j]);
