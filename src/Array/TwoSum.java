@@ -1,5 +1,6 @@
-import java.util.Arrays;
+package Array;
 
+import java.util.Arrays;
 /*
  * Leetcode Practice: #1. Two Sum
  * 

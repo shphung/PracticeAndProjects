@@ -1,6 +1,6 @@
 package String;
-import java.util.Stack;
 
+import java.util.Stack;
 /*
  * Leetcode Practice: #20. Valid Parentheses
  * 
