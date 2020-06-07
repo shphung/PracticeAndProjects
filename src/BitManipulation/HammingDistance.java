@@ -23,7 +23,6 @@ public class HammingDistance {
 	}
 
 	public static int hammingDistance(int x, int y) {
-		int xor = x ^ y;
-		return Integer.bitCount(xor);
+		return Integer.bitCount(x ^ y);
 	}
 }
