@@ -1,3 +1,4 @@
+package Math;
 /*
  * Leetcode Practice: #204. Count Primes
  * 
