@@ -28,12 +28,12 @@ public class AddTwoNumbers {
 		list2.next.next = new ListNode(4);
 		list2.next.next.next = new ListNode();
 		
-		System.out.println("List 1: " + toString(list1));
-		System.out.println("List 2: " + toString(list2));
+		System.out.println("List 1: " + ListNode.toString(list1));
+		System.out.println("List 2: " + ListNode.toString(list2));
 		
 		ListNode list3 = addTwoNumbers(list1, list2);
 		
-		System.out.println("List 3: " + toString(list3));
+		System.out.println("List 3: " + ListNode.toString(list3));
 	}
 	
 	/**
@@ -77,32 +77,5 @@ public class AddTwoNumbers {
 		return l3.next;
 	}
 	
-	public static String toString(ListNode head) {
-		String result = "";
-		ListNode current = head;
-		while(current.next != null) {
-            result += current.val + " -> ";
-            current = current.next;
-        }
-		result += "null";
-		return result;
-	}
-}
-
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class ListNode {
-	int val;
-	ListNode next;
-	ListNode() {}
-	ListNode(int val) { this.val = val; }
-	ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+	
 }

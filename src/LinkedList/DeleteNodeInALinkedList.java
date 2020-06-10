@@ -1,5 +1,4 @@
 package LinkedList;
-import ListNode;
 
 /*
  * Leetcode Practice: #237. Delete Node in a Linked List
@@ -23,17 +22,25 @@ import ListNode;
  * 	should become 4 -> 5 -> 9 after calling your function.
  */
 public class DeleteNodeInALinkedList {
-	/**
-	 * Definition for singly-linked list.
-	 * public class ListNode {
-	 *     int val;
-	 *     ListNode next;
-	 *     ListNode(int x) { val = x; }
-	 * }
-	 */
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		ListNode list1 = new ListNode(4);
+		list1.next = new ListNode(5);
+		list1.next.next = new ListNode(1);
+		list1.next.next.next = new ListNode(9);
+		list1.next.next.next.next = new ListNode();
+		System.out.println("List: " + ListNode.toString(list1));
+		deleteNode(list1.next);
+		System.out.println("List: " + ListNode.toString(list1));
+		
+		ListNode list2 = new ListNode(4);
+		list2.next = new ListNode(5);
+		list2.next.next = new ListNode(1);
+		list2.next.next.next = new ListNode(9);
+		list2.next.next.next.next = new ListNode();
+		System.out.println("List: " + ListNode.toString(list2));
+		deleteNode(list2.next.next);
+		System.out.println("List: " + ListNode.toString(list2));
 	}
 	
 	public static void deleteNode(ListNode node) {
