@@ -1,3 +1,4 @@
+package LinkedList;
 /*
  * Leetcode Practice: #21. Merge Two Sorted Lists
  * 
@@ -10,24 +11,23 @@
  * 	Output: 1-> 1-> 2-> 3-> 4-> 4
  */
 public class MergeTwoSortedLists {
-
-	/**
-	 * Definition for singly-linked list.
-	 * public class ListNode {
-	 *     int val;
-	 *     ListNode next;
-	 *     ListNode() {}
-	 *     ListNode(int val) { this.val = val; }
-	 *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-	 * }
-	 */
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		ListNode list1 = new ListNode(1);
+		list1.next = new ListNode(2);
+		list1.next.next = new ListNode(4);
+		System.out.println("List 1: " + ListNode.toString(list1));
+		
+		ListNode list2 = new ListNode(1);
+		list2.next = new ListNode(3);
+		list2.next.next = new ListNode(4);
+		System.out.println("List 2: " + ListNode.toString(list2));
+		
+		ListNode list3 = mergeTwoLists(list1, list2);
+		System.out.println("Merged List: " + ListNode.toString(list3));
 	}
 	
-	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+	public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if(l1 == null && l2 == null) {
             return null;
         }
@@ -57,12 +57,4 @@ public class MergeTwoSortedLists {
         }
         return result.next;
     }
-}
-
-class ListNode {
-	int val;
-	ListNode next;
-	ListNode() {}
-	ListNode(int val) { this.val = val; }
-	ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
