@@ -1,3 +1,6 @@
+package LinkedList;
+import ListNode;
+
 /*
  * Leetcode Practice: #237. Delete Node in a Linked List
  * 
