@@ -1,3 +1,4 @@
+package Math;
 /*
  * Leetcode Practice: #202. Happy Number
  * 
