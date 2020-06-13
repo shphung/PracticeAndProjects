@@ -1,3 +1,4 @@
+package Array;
 /*
  * Leetcode Practice: #55. Jump Game
  * 
