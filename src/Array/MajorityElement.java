@@ -1,3 +1,4 @@
+package Array;
 /*
  * Leetcode Practice: #169. Majority Element
  * 
