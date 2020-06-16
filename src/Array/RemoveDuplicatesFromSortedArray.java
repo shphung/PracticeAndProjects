@@ -1,3 +1,4 @@
+package Array;
 /*
  * Leetcode Practice: #29. Remove Duplicates from Sorted Array
  * 
