@@ -30,4 +30,13 @@ public class TreeNode {
 		this.left = left;
 		this.right = right;
 	}
+	
+	public static void toString(TreeNode node) {
+		if(node == null) {
+        	return;
+        }
+		System.out.print(node.val + " ");
+		toString(node.left);
+		toString(node.right);
+	}
 }
