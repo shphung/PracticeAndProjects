@@ -45,7 +45,7 @@ public class SearchInRotatedArray {
 			if(target == nums[mid]) {
 				return mid;
 			}
-			//If low value is smaller than mid value
+			//If low value is smaller than mid value (low - mid) is ascending
 			if(nums[low] <= nums[mid]) {
 				//If target is between low value and mid value
 				if(nums[low] <= target && target < nums[mid]) {
@@ -55,7 +55,6 @@ public class SearchInRotatedArray {
 				} else {
 					low = mid + 1;
 				}
-			//If low value is greater than mid value
 			} else {
 				//If target is between mid value and high value
 				if(nums[mid] < target && target <= nums[high]) {
